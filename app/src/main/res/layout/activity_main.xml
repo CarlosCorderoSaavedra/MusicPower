@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicpower.MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageVinil"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/vinilo"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="@string/music_lovers"
+
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
