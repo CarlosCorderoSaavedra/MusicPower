@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Music Power Store</string>
     <string name="music_lovers">For truly music</string>
+    <string name="open_hours">Mon-Sat 9:00/21:00</string>
+    <string name="text_maps">Av Rey Juan Carlos I 63 </string>
+    <string name="text_mail">music.lovers@gmail.com</string>
 </resources>

@@ -4,21 +4,126 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicpower.MainActivity"
-    >
+    tools:context="com.example.android.musicpower.MainActivity">
 
 
     <ImageView
         android:id="@+id/imageVinil"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/vinilo"
-        android:scaleType="centerCrop"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:text="@string/music_lovers"
+        android:layout_height="270dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vinilo" />
 
-        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/image_music_lover"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageVinil"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/musiclovers" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_music_lover"
+        android:paddingTop="50dp"
+        android:paddingLeft="100dp">
+
+    <ImageView
+        android:id="@+id/image_time"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/watch" />
+
+    <TextView
+        android:id="@+id/text_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/image_time"
+        android:text="@string/open_hours"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/image_maps"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/image_time"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/maps" />
+
+    <TextView
+        android:id="@+id/text_maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_hours"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/image_maps"
+        android:text="@string/text_maps"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/image_mail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/image_maps"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/mailicon" />
+
+    <TextView
+        android:id="@+id/text_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_maps"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/image_maps"
+        android:text="@string/text_mail"
+        android:textColor="@android:color/black" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="7sp">
+
+        <ImageView
+            android:id="@+id/icon_fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/icon_twitter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/twitter"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/icon_gplus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/googleplus"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/icon_youtube"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/youtube"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
