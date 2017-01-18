@@ -33,30 +33,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_music_lover"
-        android:paddingTop="50dp"
-        android:paddingLeft="100dp">
+        android:paddingLeft="20dp">
 
     <ImageView
+
         android:id="@+id/image_time"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/watch" />
 
     <TextView
+
         android:id="@+id/text_hours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="50dp"
+        android:paddingTop="35dp"
         android:layout_toRightOf="@+id/image_time"
         android:text="@string/open_hours"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_information"/>
 
     <ImageView
         android:id="@+id/image_maps"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@+id/image_time"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="45dp"
         android:src="@drawable/maps" />
 
     <TextView
@@ -64,18 +68,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_hours"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="48dp"
         android:layout_toRightOf="@+id/image_maps"
         android:text="@string/text_maps"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_information"/>
 
     <ImageView
         android:id="@+id/image_mail"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@+id/image_maps"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="45dp"
         android:src="@drawable/mailicon" />
 
     <TextView
@@ -83,11 +88,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_maps"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="48dp"
         android:layout_toRightOf="@+id/image_maps"
         android:text="@string/text_mail"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_information"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
